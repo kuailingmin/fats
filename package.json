@@ -1,0 +1,24 @@
+{
+	"name": "fats",
+	"description": "The front-end automation tools",
+	"version": "0.0.1",
+	"author": {
+		"name": "pangnate",
+		"email": "pangnate@gmail.com"
+	},
+	"keywords": [
+		"fats",
+		"front-end automation tools"
+	],
+	"bin": {
+		"fats": "bin/fats"
+	},
+	"main": "fats.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"dependencies": {
+		"fats-kernel": "",
+		"commander": ""
+	}
+}
