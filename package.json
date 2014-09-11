@@ -1,7 +1,7 @@
 {
 	"name": "fats",
 	"description": "Front-end automation tools",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"author": {
 		"name": "pangnate",
 		"email": "pangnate@gmail.com"
@@ -18,7 +18,10 @@
 		"node": ">= 0.8.0"
 	},
 	"dependencies": {
+		"commander": "",
 		"fats-kernel": "",
-		"commander": ""
+		"fats-command-init": "",
+		"fats-command-server": "",
+		"fats-command-release": ""
 	}
 }
