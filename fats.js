@@ -57,6 +57,15 @@ fats.cli.run = function (argv) {
 	} else if (first[0] === '-') {
 		fats.cli.help();
 	} else {
-
+		//register command
+		var commander = fats.cli.commander = require('commander');
+		var cmd = fats.require('command', argv[2]);
+		cmd.register(
+			commander
+				.command(cmd.name || first)
+				.usage(cmd.usage)
+				.description(cmd.desc)
+		);
+		commander.parse(argv);
 	}
 };
