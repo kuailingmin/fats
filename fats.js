@@ -32,7 +32,10 @@ fats.cli.help = function () {
 	];
 
 	fats.cli.help.commands.forEach(function (name) {
-		content.push('    ' + name);
+		var cmd = fats.require('command', name);
+		name = cmd.name || name;
+		name = fats.util.pad(name, 12);
+		content.push('    ' + name + (cmd.desc || ''));
 	});
 
 	content = content.concat([
