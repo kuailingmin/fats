@@ -17,9 +17,24 @@ fats.cli.commander = null;
 fats.cli.info = fats.util.readJSON(__dirname + '/package.json');
 
 //output version info
-fats.cli.version = function(){
+fats.cli.version = function () {
 	console.log('v' + fats.cli.info.version);
 };
+
+//colors
+fats.cli.colors = require('colors');
+fats.cli.colors.setTheme({
+	silly: 'rainbow',
+	input: 'grey',
+	verbose: 'cyan',
+	prompt: 'grey',
+	info: 'green',
+	data: 'grey',
+	help: 'cyan',
+	warn: 'yellow',
+	debug: 'blue',
+	error: 'red'
+});
 
 //output help info
 fats.cli.help = function () {
