@@ -24,12 +24,11 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "commander": "~2.3.0",
-    "inquirer": "~0.7.2",
-    "colors": "~0.6.2",
-    "fats-kernel": "",
+    "colors": "",
+    "commander": "",
     "fats-command-init": "",
+    "fats-command-release": "",
     "fats-command-server": "",
-    "fats-command-release": ""
+    "fats-kernel": ""
   }
 }
