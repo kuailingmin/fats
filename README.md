@@ -57,7 +57,7 @@ init 命令使用交互式询问方式，需要等待用户输入
 	? Has branches [yes/no]?: no
 	? Template: default
 
-### fats server <command\> [option]
+### fats server &lt;command&gt; [option]
 
 Commands:
 	
