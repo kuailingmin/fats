@@ -18,7 +18,10 @@ fats.cli.info = fats.util.readJSON(__dirname + '/package.json');
 
 //output version info
 fats.cli.version = function () {
-	console.log('v' + fats.cli.info.version);
+	var content = [
+		'v' + fats.cli.info.version
+	];
+	console.log(content.join('\n'));
 };
 
 //colors
