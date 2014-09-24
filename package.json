@@ -1,34 +1,38 @@
 {
-  "name": "fats",
-  "description": "Front-end automation tools",
-  "version": "0.0.6",
-  "author": [
-	  {
-		  "name": "pangnate",
-		  "email": "pangnate@gmail.com"
-	  },
-	  {
-		  "name": "reafagon",
-		  "email": "reafagon@hotmail.com"
-	  }
-  ],
-  "keywords": [
-    "fats",
-    "front-end automation tools"
-  ],
-  "bin": {
-    "fats": "bin/fats"
-  },
-  "main": "fats.js",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "dependencies": {
-    "colors": "",
-    "commander": "",
-    "fats-command-init": "",
-    "fats-command-release": "",
-    "fats-command-server": "",
-    "fats-kernel": ""
-  }
+	"name": "fats",
+	"description": "Front-end automation tools",
+	"version": "0.0.6",
+	"author": [
+		{
+			"name": "pangnate",
+			"email": "pangnate@gmail.com"
+		},
+		{
+			"name": "reafagon",
+			"email": "reafagon@hotmail.com"
+		}
+	],
+	"keywords": [
+		"fats",
+		"front-end automation tools"
+	],
+	"bin": {
+		"fats": "bin/fats"
+	},
+	"main": "fats.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"dependencies": {
+		"colors": "^0.6.2",
+		"commander": "^2.3.0",
+		"fats-command-init": "",
+		"fats-command-release": "",
+		"fats-command-server": "",
+		"fats-kernel": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pangnate/fats.git"
+	}
 }
