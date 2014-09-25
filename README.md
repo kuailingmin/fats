@@ -16,7 +16,7 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 	cd /root/home    
 	fats init
 
-### server (非稳定版)
+### server 
 
 命令可以启动一个本地web服务器用于预览fats release产出前后的项目。
 
