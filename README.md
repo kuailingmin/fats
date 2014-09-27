@@ -1,7 +1,5 @@
 # fats
 
-------------------
-
 ### 介绍
 
 fats是一套前端自动化工具系统（Front-end automation tools system），它主要包括以下命令：
@@ -46,7 +44,7 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
     
 ### 下载安装
 
-> npm install -g fats
+	npm install -g fats
 
 依赖环境：`Node.js`、`npm`
 
