@@ -48,6 +48,8 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 
 依赖环境：`Node.js`、`npm`
 
+> 部分操作系统在安装 `fats` 时可能会出现 `(node-gyp rebuild 2> builderror.log) || (exit 0)` 等错误信息，这是由 `ws` 模块导致，并不影响最终使用。
+
 ------------------------------------
 
 ### 命令行参数
@@ -79,7 +81,8 @@ Commands:
 
 Options
 
-**--root, -r**  : web服务器指向的根目录 `--root /path/to/dir`，如果不传递该参数，则使用当前执行 `server` 命令的目录作为根目录    
+**--root, -r**  : web服务器指向的根目录 `--root /path/to/dir`，如果不传递该参数，则使用当前执行目录作为根目录  
+**--hostname, -n**  : 服务器使用的域名，如果不传递该参数，则使用 `ip` 作为主机名     
 **--port, -p**  : web服务器使用的端口 `--port 8080`，`(default 3000)`   
 **--watch, -w**  : 修改代码后浏览器自动刷新 `--watch on`，`(default off)`    
 
