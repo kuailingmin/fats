@@ -48,7 +48,7 @@ fats.cli.help = function () {
 		'    -v, --version  output the version number',
 		''
 	]);
-	fats.log.out(content.join('\n'));
+	console.log(content.join('\n'));
 };
 
 fats.cli.help.commands = [ 'init', 'server', 'release' ];
