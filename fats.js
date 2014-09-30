@@ -1,10 +1,6 @@
 //kernel
 var fats = module.exports = require('fats-kernel');
 
-fats.config.extend({
-	a: "test a"
-});
-
 //exports cli object
 fats.cli = {};
 
@@ -21,23 +17,11 @@ fats.cli.version = function () {
 	var content = [
 		'v' + fats.cli.info.version
 	];
-	console.log(content.join('\n'));
+	fats.log.out(content.join('\n'));
 };
 
 //colors
 fats.cli.colors = require('colors');
-fats.cli.colors.setTheme({
-	silly: 'rainbow',
-	input: 'grey',
-	verbose: 'cyan',
-	prompt: 'grey',
-	info: 'green',
-	data: 'grey',
-	help: 'cyan',
-	warn: 'yellow',
-	debug: 'blue',
-	error: 'red'
-});
 
 //output help info
 fats.cli.help = function () {
@@ -64,7 +48,7 @@ fats.cli.help = function () {
 		'    -v, --version  output the version number',
 		''
 	]);
-	console.log(content.join('\n'));
+	fats.log.out(content.join('\n'));
 };
 
 fats.cli.help.commands = [ 'init', 'server', 'release' ];
