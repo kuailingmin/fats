@@ -25,7 +25,7 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 
 该调试服务器拥有以下特点：
 
-* 代码修改，保存后多浏览器自动刷新
+* 代码修改保存后多浏览器自动刷新（IE6+）
 * 可以在html页面中include子模板（基于`artTemplate`，使用简洁版语法）
 * SSI支持(计划)
 
