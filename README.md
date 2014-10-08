@@ -25,18 +25,18 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 
 该调试服务器拥有以下特点：
 
-* 代码修改保存后多浏览器自动刷新（IE6+）
+* 代码修改保存后多浏览器自动刷新（类似livereload免刷功能，支持IE6+）
 * 可以在html页面中include子模板（基于`artTemplate`，使用简洁版语法）
-* SSI支持(计划)
+* SSI支持(future)
 
-#### release (开发中)
+#### release (developing)
 
 命令用于编译并发布的你的项目，程序通过读取目录下`Fatsfile.js`中的配置参数进行编译发布操作。
 
 	cd /root/home/demo    
 	fats server release
 
-#### install (计划)
+#### install (future)
  
 命令安装fats仓库提供的各种组件、框架、示例、素材、配置等开发资源。
 
