@@ -82,7 +82,7 @@ Commands:
 Options
 
 **--root, -r**  : web服务器指向的根目录 `--root /path/to/dir`，如果不传递该参数，则使用当前执行目录作为根目录  
-**--hostname, -n**  : 服务器使用的主机名，如果不传递该参数，则使用 `ip` 作为主机名     
+**--hostname, -n**  : 服务器使用的主机名，如果不传递该参数，则使用 `ip` 作为主机名。使用前需要在 `hosts` 文件中添加相应规则   
 **--port, -p**  : web服务器使用的端口 `--port 8080`，`(default 3000)`   
 **--watch, -w**  : 修改代码后浏览器自动刷新 `--watch on`，`(default off)`
 
