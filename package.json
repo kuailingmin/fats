@@ -1,11 +1,17 @@
 {
 	"name": "fats",
 	"description": "Front-end automation tools",
-	"version": "0.0.6",
-	"author": [
+	"version": "0.1.6",
+	"author": {
+		"name": "pangnate",
+		"email": "pangnate@gmail.com",
+		"url": "http://weibo.com/pangnate"
+	},
+	"contributors": [
 		{
 			"name": "pangnate",
-			"email": "pangnate@gmail.com"
+			"email": "pangnate@gmail.com",
+			"url": "http://weibo.com/pangnate"
 		},
 		{
 			"name": "reafagon",
@@ -34,5 +40,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pangnate/fats.git"
-	}
+	},
+	"bugs": "https://github.com/pangnate/fats/issues",
+	"license": "BSD"
 }
