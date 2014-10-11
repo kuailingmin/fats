@@ -1,6 +1,12 @@
 //kernel
 var fats = module.exports = require('fats-kernel');
 
+//default config
+fats.config.set({
+	welcomePage: 'index.html',
+	md5Length: 7  // the length of timestamp
+});
+
 //exports cli object
 fats.cli = {};
 
