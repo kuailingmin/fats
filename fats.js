@@ -4,7 +4,8 @@ var fats = module.exports = require('fats-kernel');
 //default config
 fats.config.set({
 	welcomePage: 'index.html',
-	md5Length: 7  // the length of timestamp
+	md5Length: 7,  // the length of timestamp
+	cssCompatibility: 'ie7' // css minify compatibility
 });
 
 //exports cli object
