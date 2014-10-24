@@ -2,7 +2,7 @@
 
 ### 介绍
 
-fats是一套前端自动化工具系统（Front-end automation tools system），它主要包括以下命令：
+fats是一套前端自动化工具系统（Front-end automation tools system），它立足我厂实际，主要解决前端开发过程中的工程化问题。该系统主要包括以下命令：
 
 * fats init
 * fats server
