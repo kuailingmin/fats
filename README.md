@@ -11,14 +11,14 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 
 #### init
 
-命令可以使用模板初始化一个本地项目。
+该命令是一个脚手架工具，可以使用模板快速初始化一个本地项目。
 
 	cd /root/home    
 	fats init
 
 #### server 
 
-命令可以启动一个本地web服务器用于预览fats release产出前后的项目。
+该命令可以启动一个本地web服务器用于预览fats release产出前后的项目。
 
 	cd /root/home/demo    
 	fats server start
@@ -27,6 +27,7 @@ fats是一套前端自动化工具系统（Front-end automation tools system）�
 
 * 代码修改保存后多浏览器自动刷新（类似LiveReload免刷功能，支持IE6+）
 * 可以在html页面中include子模板（基于`artTemplate`，使用简洁版语法）
+* 可以方便的使用静态文件模拟数据接口(future)
 * SSI支持(future)
 
 #### release (developing)
