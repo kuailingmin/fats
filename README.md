@@ -1,95 +1,26 @@
 # fats
 
-### 介绍
+[![NPM version](https://badge.fury.io/js/fats.svg)](http://badge.fury.io/js/fats)
+![Downloads](http://img.shields.io/npm/dm/fats.svg)
 
-fats是一套前端自动化工具系统（Front-end automation tools system），它立足我厂实际，主要解决前端开发过程中的工程化问题。该系统主要包括以下命令：
 
-* fats init
-* fats server
-* fats release
-* fats install
+fats 是一套前端自动化工具系统（Front-end automation tools system）。它立足实际，主要解决前端开发过程中的工程化问题。
 
-#### init
+fats 目前具备以下功能：
 
-该命令是一个脚手架工具，可以使用模板快速初始化一个本地项目。
+* 项目快速初始化（脚手架）；
+* 静态web服务器，修改代码后浏览器自动刷新，解放F5；
+* 配合自带的web服务器，静态页面支持 include 子模板，便于多人协作开发；
+* css/js校验，并生成诊断报告；
+* 压缩、合并css/js，并自动修改css中背景图的时间戳；
 
-	cd /root/home    
-	fats init
+fats 未来还将具备以下功能：
 
-#### server 
+* 接口模拟，前端开发阶段不再依赖后端接口；
+* 支持AMD/CMD模块编译；
+* 支持常见的css/js预处理语言；
+* 支持命令行方式安装模块或开发资源；
+* 模板支持SSI语法；
 
-该命令可以启动一个本地web服务器用于预览fats release产出前后的项目。
 
-	cd /root/home/demo    
-	fats server start
-
-该调试服务器拥有以下特点：
-
-* 代码修改保存后多浏览器自动刷新（类似LiveReload免刷功能，支持IE6+）
-* 可以在html页面中include子模板（基于`artTemplate`，使用简洁版语法）
-* 可以方便的使用静态文件模拟数据接口(future)
-* SSI支持(future)
-
-#### release (developing)
-
-命令用于编译并发布的你的项目，程序通过读取目录下`Fatsfile.js`中的配置参数进行编译发布操作。
-
-	cd /root/home/demo    
-	fats server release
-
-#### install (future)
- 
-命令安装fats仓库提供的各种组件、框架、示例、素材、配置等开发资源。
-
-------------------------------------
-    
-### 下载安装
-
-	npm install -g fats
-
-依赖环境：`Node.js`、`npm`
-
-> 部分操作系统在安装 `fats` 时可能会出现 `(node-gyp rebuild 2> builderror.log) || (exit 0)` 等错误信息，这是由 `ws` 模块内部导致，并不影响最终的安装结果。
-
-------------------------------------
-
-### 命令行参数
-
-### fats init
-
-init 命令使用交互式询问方式，需要等待用户输入
-
-	? Project name: myProject
-	? Has branches [yes/no]?: no
-	? Template: default
-
-### fats server &lt;command&gt; [option]
-
-Commands:
-	
-**start**  
-
-	fats server start
-	fats server start --port 3000 --root /path/to/dir --watch off
-
-**restart**  
-
-	fats server restart
-
-**stop**  
-
-	fats server stop
-
-Options
-
-**--root, -r**  : web服务器指向的根目录 `--root /path/to/dir`，如果不传递该参数，则使用当前执行目录作为根目录  
-**--hostname, -n**  : 服务器使用的主机名，如果不传递该参数，则使用 `ip` 作为主机名。使用前需要在 `hosts` 文件中添加相应规则   
-**--port, -p**  : web服务器使用的端口 `--port 8080`，`(default 3000)`   
-**--watch, -w**  : 修改代码后浏览器自动刷新 `--watch on`，`(default off)`
-
------------------------------------------------
-
-### 升级日志
-
-* ...
-
+**详细安装及使用文档请移步 [docs](./docs)**
