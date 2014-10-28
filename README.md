@@ -23,4 +23,4 @@ fats 未来还将具备以下功能：
 * 模板支持SSI语法；
 
 
-**详细安装及使用文档请移步 [docs](./docs)**
+**详细安装及使用文档请移步 [docs](./docs/getting-started.md)**
