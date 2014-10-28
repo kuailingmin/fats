@@ -1,10 +1,5 @@
 # fats
 
-[![NPM version](https://badge.fury.io/js/fats.svg)](http://badge.fury.io/js/fats)
-![Downloads](http://img.shields.io/npm/dm/fats.svg)
-
-# 新手上路
-
 fats 是一套前端自动化工具系统（Front-end automation tools system）。它立足实际，主要解决前端开发过程中的工程化问题。
 
 fats 的安装与管理都是通过 [npm](https://npmjs.org)，npm 是 [Node.js](http://nodejs.org) 的包管理器。    
