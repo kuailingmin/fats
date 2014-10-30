@@ -4,7 +4,7 @@
 ![Downloads](http://img.shields.io/npm/dm/fats.svg)
 
 
-fats 是一套前端自动化工具系统（Front-end automation tools system）。它立足实际，主要解决前端开发过程中的工程化问题。
+fats 是一套前端自动化工具系统（Front-end automation tools system）。她立足实际，主要解决前端开发过程中的工程化问题。
 
 fats 目前具备以下功能：
 
@@ -22,5 +22,7 @@ fats 未来还将具备以下功能：
 * 支持命令行方式安装模块或开发资源；
 * 模板支持SSI语法；
 
-
 **详细安装及使用文档请移步 [docs](./docs/getting-started.md)**
+
+
+从功能到代码，fats 还很简陋。但我们会一直努力雕琢，直到让她在我们手中成为完美。
