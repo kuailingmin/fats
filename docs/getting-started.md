@@ -32,4 +32,5 @@ OK，现在就可以随便编辑代码，保存看一下会发生什么吧！
 
 1. [项目初始化（fats init）](./fats-init.md)
 2. [开发调试（fats server）](./fats-server.md)
-3. [编译与发布（fats release）](./fats-release.md)
+3. [数据及接口模拟](./mock.md)
+4. [编译与发布（fats release）](./fats-release.md)

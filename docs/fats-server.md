@@ -10,12 +10,12 @@
 
 该web服务器有以下特点：
 
-* 代码修改保存后多浏览器自动刷新（类似LiveReload免刷功能，支持IE6+，支持刷新远程浏览器）；
+* 代码修改保存后多浏览器自动刷新（类似LiveReload免刷功能，支持IE6+，支持刷新远程浏览器，多显示器壕们的最爱！）；
 * 可以在html页面中include子模板（基于 [artTemplate](https://github.com/aui/artTemplate)，使用[简洁版语法](https://github.com/aui/artTemplate/wiki/syntax:simple)）；
+* 使用静态文件模拟数据及接口；
 
 未来还将支持以下功能：
 
-* 使用静态文件模拟数据接口；
 * 模板支持SSI语法；
 
 
