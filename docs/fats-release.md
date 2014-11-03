@@ -66,3 +66,58 @@ Fatsfile.js 可用的任务名称有：
 	}
 
 ### uglify / cleancss 任务配置
+
+
+	// 合并、压缩js文件
+	uglify: {
+
+		/*
+		 * task 为用户自定义分组名，至少有一个可用分组
+		 * options 为参数控制，目前可以设置压缩合并后的 banner 
+		 * subTask1、subTask2 为用户自定义子分组名，至少有一个可用，可以细粒度控制合并规则
+		 */
+    
+		task: {
+			options: {
+				banner: '/*! ' +
+					'<%= pkg.name %> v<%= pkg.version %> ' +
+					'<%= fats.template.today("YYYY-MM-DD hh:mm:ss") %> ' +
+					'*/\n'
+			},
+			subTask1: {
+				src: 'js/(?!.*(jquery|min)).*.js',  // 合并所有非jquery及min文件
+				dest: 'js/<%= pkg.name %>.min.js'
+			},
+			subTask2: {
+				'js/test.min.js': 'js/test.js'
+			}
+		}
+	}
+
+
+	// 合并、压缩css文件
+	cleancss: {
+
+		/*
+		 * task 为用户自定义分组名，至少有一个可用分组
+		 * options 为参数控制，目前可以设置压缩合并后的 banner，以及css背景图前缀 
+		 * subTask1、subTask2 为用户自定义子分组名，至少有一个可用，可以细粒度控制合并规则
+		 */
+    
+		task: {
+			options: {
+				banner: '/*! ' +
+					'<%= pkg.name %> v<%= pkg.version %> ' +
+					'<%= fats.template.today("YYYY-MM-DD hh:mm:ss") %> ' +
+					'*/\n',
+				urlPrefix: 'http://css.suning.cn'
+			},
+			subTask1: {
+				src: 'js/(?!.*(jquery|min)).*.js',  // 合并所有非jquery及min文件
+				dest: 'js/<%= pkg.name %>.min.js'
+			},
+			subTask2: {
+				'js/test.min.js': 'js/test.js'
+			}
+		}
+	}
