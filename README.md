@@ -9,20 +9,29 @@ fats 是一套前端自动化工具系统（Front-end automation tools system）
 fats 目前具备以下功能：
 
 * 项目快速初始化（脚手架）；
-* 静态web服务器，修改代码后浏览器自动刷新，解放F5；
+* 静态web服务器，修改代码后浏览器自动刷新，解放F5，多屏开发更爽；
 * 配合自带的web服务器，静态页面支持 include 子模板，便于多人协作开发；
 * css/js校验，并生成诊断报告；
 * 压缩、合并css/js，并自动修改css中背景图的时间戳；
+* 接口及数据模拟，前端开发阶段不再依赖后端；
 
 fats 未来还将具备以下功能：
 
-* 接口模拟，前端开发阶段不再依赖后端接口；
 * 支持AMD/CMD模块编译；
 * 支持常见的css/js预处理语言；
 * 支持命令行方式安装模块或开发资源；
 * 模板支持SSI语法；
 
-**详细安装及使用文档请移步 [docs](./docs/getting-started.md)**
+**详细文档请阅读**
+
+1. [新手指南](./docs/getting-started.md)
+2. [项目初始化（fats init）](./docs/fats-init.md)
+2. [开发调试（fats server）](./docs/fats-server.md)
+3. [数据及接口模拟](./docs/mock.md)
+4. [编译与发布（fats release）](./docs/fats-release.md)
 
 
-从功能到代码，fats 还很简陋。但我们会一直努力雕琢，直到让她在我们手中成为完美。
+从功能到代码，fats 还很简陋，但我们会努力让她变得更好。
+
+
+
