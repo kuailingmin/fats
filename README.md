@@ -1,7 +1,7 @@
 # fats
 
 [![NPM version](https://badge.fury.io/js/fats.svg)](http://badge.fury.io/js/fats)
-![Downloads](http://img.shields.io/npm/dm/fats.svg)
+![Downloads](https://img.shields.io/npm/dm/fats.svg)
 
 
 fats 是一套前端自动化工具系统（Front-end automation tools system）。她立足实际，主要解决前端开发过程中的工程化问题。
